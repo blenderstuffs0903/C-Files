@@ -3,7 +3,6 @@
 
 int main()
 {
-    system("cls");
     {
         // 1. Increament/Decreament of a Pointer
         int a = 10;
@@ -48,9 +47,22 @@ int main()
         printf("Comparision of Pointers\n");
         printf("ptr1 = %u, ptr2 = %u\n", ptr1, ptr2);
         if (ptr1 == ptr2) {
-            printf("ptr1 and ptr2 points to the same memory address.\n");
+            printf("ptr1 and ptr2 points to the same memory address.\n\n");
+        } else {
+            printf("ptr1 and ptr2 does not points to the same memory address.\n\n");
         }
-        // We can also use the comparision operators like: <, >, <=, >= ...
+        // We can also use the comparision operators like: <, >, <=, >=, !=.
+    }
+    {
+        // Comparison to NULL
+        printf("Comparison to NULL\n");
+        int* ptr = NULL;
+        printf("ptr = %u\n", ptr);
+        if (ptr == NULL) {
+            printf("The pointer is NULL\n\n");
+        } else {
+            printf("The pointer is not NULL\n\n");
+        }
     }
     return 0;
 }
