@@ -12,10 +12,10 @@ int main() {
             "->");
     scanf("%d", &hardness_level);
     if (hardness_level == 1) {
-        lives = 20;
+        lives = 15;
         range = 100;
     } else if (hardness_level == 2){
-        lives = 15;
+        lives = 10;
         range = 1000;
     }
     int chosed_number, guessed_number;
@@ -53,6 +53,10 @@ int main() {
         else if (chosed_number == guessed_number) {
             printf("%d was the number, you won!", chosed_number);
             break;
+        }
+        if (lives == 0) {
+            printf( "You ran out of lives\n"
+                    "It was %d\n", chosed_number);
         }
     }
     return 0;
