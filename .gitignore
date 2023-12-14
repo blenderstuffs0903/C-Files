@@ -2,4 +2,4 @@
 *.exe
 tempCodeRunnerFile.c
 test.c
-.vscode/tasks.json
+.vscode
