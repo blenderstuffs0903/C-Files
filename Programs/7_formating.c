@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main() {
+int main()
+{
     // Format Specifier(%) : Defines and formats a type of data to be displayed
 
     //  %c  = character
@@ -9,6 +9,9 @@ int main() {
     //  %f  = float
     //  %lf = double
     //  %d  = int
+    //  %u = unsigned integer
+    //  %lld = long long integer
+    //  %llu = long long unsigned integer
 
     //  %.1 = decimal precision
     //  %1  = minimum field width
@@ -20,7 +23,7 @@ int main() {
 
     printf("%-7.2f\n", item_1);
     printf("%7.3f\n", item_2);
-    printf("%-7.2f\n", item_3);
-    system("pause");
-    return(0);
+    printf("%-7.2f", item_3);
+    printf("<=");
+    return (0);
 }

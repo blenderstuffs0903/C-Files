@@ -13,7 +13,7 @@ int main(){
 
     bool e = true;                        // 1 byte (true or false) %d
  
-    char f = 120;                         // 1 byte (-128 to +127) %d or %c
+    char f = 121;                         // 1 byte (-128 to +127) %d or %c
     unsigned char g = 255;       // 1 byte (0 to +255) %d or %c
 
     short h = 32767;                  // 2 bytes (−32,768 to +32,767) %d
