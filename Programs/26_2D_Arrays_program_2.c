@@ -5,6 +5,7 @@
 int main() {
     int matrix[3][3];
     int numberOfColumns = (sizeof(*matrix)/sizeof(int));
+    // int numberOfRows = ((sizeof(matrix)/sizeof(int))/numberOfColumns);
     int numberOfRows = ((sizeof(matrix)/sizeof(int))/numberOfColumns);
     for (int i = 0; i < numberOfRows; i++) {
         printf("Enter elements of row %d.\n", i+1); 

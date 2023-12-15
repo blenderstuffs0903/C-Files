@@ -18,10 +18,11 @@ int main() {
     int matrix_7[][3] = {0}; //--> {0, 0, 0}
     int matrix_8[][3] = {1, 2, 3}; //--> {1, 2, 3}
     int matrix_9[][3] = {1, 2, 3, 4}; //--> {{1, 2, 3}, {4, 0, 0}}
+    int matrix_10[][3] = {{1, 2}, 9, 8}; //--> {{1, 2, 0}, {9, 8, 0}};
     printf("%llu\n", sizeof(matrix_8)/sizeof(int));
     for (int i = 0; i < 2; i++){
         for (int j = 0; j < 3; j++) {
-            printf("%d  ", matrix_8[i][j]);
+            printf("%d  ", matrix_10[i][j]);
         }
         printf("\n");
     }

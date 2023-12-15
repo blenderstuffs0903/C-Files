@@ -21,7 +21,7 @@ int main() {
         case 5:
             printf("Friday\n");
             break;
-        case 6:
+        case 7+4:
             printf("Saturday\n");
             break;
         case 7:
@@ -31,6 +31,5 @@ int main() {
             printf("Enter a valid day number.\n");
             break;
     }
-    system("pause");
     return 0;
 }
