@@ -20,9 +20,8 @@ int main()
     float item_1 = 2.5;
     float item_2 = 7.555;
     float item_3 = 19.85;
-
     printf("%-7.2f\n", item_1);
-    printf("%7.3f\n", item_2);
+    printf("%7.2f\n", item_2);
     printf("%-7.2f", item_3);
     printf("<=");
     return (0);
