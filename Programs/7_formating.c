@@ -23,6 +23,6 @@ int main()
     printf("%-7.2f\n", item_1);
     printf("%7.2f\n", item_2);
     printf("%-7.2f", item_3);
-    printf("<=");
+    printf("<=\n");
     return (0);
 }
