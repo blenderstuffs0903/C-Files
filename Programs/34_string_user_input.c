@@ -40,6 +40,5 @@ int main() {
                 truncated bcz the last character is reserved for null character.
             (2) If we enter n-1 characters there will be no space for the newline character as the last character is 
                 reserver for the null character.*/ 
-    // If we enter exactly 10 characters which is the 
     return 0;
 }

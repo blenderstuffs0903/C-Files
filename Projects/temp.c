@@ -1,19 +1,24 @@
 // Recursive Factorial
 #include <stdio.h>
 
-int factorial(int);
+struct Node
+{
+    int data;
+    int *next;
+};
 
-int main() {
-    int n;
+void test() {
     printf("Enter a number: ");
-    scanf("%d", &n);
-    printf("%d", factorial(n));
-    return 0;
+    scanf("%d");
 }
 
-int factorial(int num) {
-    if (num == 1) {
-        return 1;
+int main()
+{
+    char s[10];
+    gets(s);
+    printf(">%s<", s);
+    if (s[0] == '\0') {
+        printf("null");
     }
-    return num * factorial(num - 1);
+    return 0;
 }

@@ -10,7 +10,7 @@ int main()
     scanf("%c", &c); // and that newline character is read by this scanf and stored in the variable c.
     printf("x=%d\n", x); // prints the value of x
     printf("char=new-->%c<--line\n", c); // we can see here that a newline is printed.
-
+    
     // 2--> While entering a value of any data type except char any leading whitespace/s(spaces, tabs, newline, etc) is ignored and truncated.
     // 3--> If we include any whitespaces b/w a value of any datatype(except char), scanf() terminates reading further and the rest of the value including the whitespace is saved in the buffer.
     //      In point 1, you might think why the newline is saved in the buffer. Well thats bcz, when you press enter to confirm the value, you are actually passing a newline character to tell scanf that's the end and the newline character is stored in the buffer.
@@ -18,8 +18,8 @@ int main()
     char str1[20];
     scanf("%[ ABab]", str1);
     printf("%s", str1);
-    // In the above example scanf will continue reading characters as long as it belongs to the character in the [].
-    // If it encounters a character not mentioned b/w [], scanf will terminate there and the rest of the character will be stored in the buffer including that buffer.
+    // In the above example scanf will continue reading characters as long as it belongs to the character is between the square bracket.
+    // If it encounters a character not mentioned b/w [], scanf will terminate there and the rest of the character will be stored in the buffer including the terminating character.
     // notice a blank space before 'A' b/w the square bracket. this means we can also enter blank space as input.
     char str2[20];
     scanf("%[^\n]", str1);

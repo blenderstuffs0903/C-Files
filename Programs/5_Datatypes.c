@@ -39,7 +39,7 @@ int main(){
     printf("%u\n", k);  // unsigned int
     printf("%lld\n", l);  // long long int
     printf("%llu\n", m);  // unsigned long long int
-
-    system("pause");
+    int garbag;
+    printf("garbage: %d", garbag);
     return 0;
 }

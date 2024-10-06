@@ -39,18 +39,11 @@ int main()
     Node *head = NULL;
     Node *tail = NULL;
 
-    int no_of_elements;
-    printf("Enter number of elements to be entered: ");
-    scanf("%d", &no_of_elements);
-    for (int i = 1; i <= no_of_elements; i++) {
-        int data;
-        printf("Enter element %d: ", i);
-        scanf("%d", &data);
-        insertAtFirst(&head, &tail, data);
-    }
+    insertAtFirst(&head, &tail, 12);
+    insertAtFirst(&head, &tail, 23);
 
-    insertAtLast(&tail, 3);
-    insertAtLast(&tail, 2);
+    insertAtLast(&tail, 34);
+    insertAtLast(&tail, 45);
     printList(head);
     return 0;
 }
